@@ -4,6 +4,7 @@ import {useTranslation} from "react-i18next";
 import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
+import "../translations/i18n.js"
 
 const IndexPage = () => {
   const {t} = useTranslation();
