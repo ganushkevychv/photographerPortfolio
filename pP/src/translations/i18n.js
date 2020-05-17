@@ -3,6 +3,7 @@ import detector from "i18next-browser-languagedetector";
 import {initReactI18next} from "react-i18next";
 import en from './en';
 import ru from './ru';
+import pl from './pl';
 
 i18n
     .use(detector)
@@ -14,6 +15,9 @@ i18n
             },
             ru:{
                 translation: ru,
+            },
+            pl:{
+                translation: pl,
             }
         },
         debug: true,
