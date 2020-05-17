@@ -3,10 +3,10 @@ import { graphql } from "gatsby"
 
 import {useTranslation} from "react-i18next";
 import Layout from "../components/layout"
-import Img from "gatsby-image"
 import SEO from "../components/seo"
 import "../translations/i18n.js"
 import Logo from "../images/me.png"
+
 
 const IndexPage = () => {
   const {t} = useTranslation();

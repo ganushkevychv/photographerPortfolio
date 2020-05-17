@@ -5,6 +5,15 @@ module.exports = {
     author: `ganushkevychv@gmail.com`,
   },
   plugins: [
+    {
+      resolve: 'gatsby-plugin-crisp-chat',
+      options: {
+        websiteId: '6ebb07ce-cc37-45c6-af43-caaa718a66d4',
+        enableDuringDevelop: false, // Optional. Disables Crisp Chat during gatsby develop. Defaults to true.
+        defer: true, // Optional. Sets the Crisp loading script to defer instead of async. Defaults to false.
+        enableImprovedAccessibility: false // Optional. Sets aria-label attribute on pop-up icon for screen readers. Defaults to true.
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
@@ -36,6 +45,8 @@ module.exports = {
         useLangKeyLayout: false
       },
   },
+
+  
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
