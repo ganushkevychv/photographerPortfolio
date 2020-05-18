@@ -1,25 +1,34 @@
 import React from "react"
 import { graphql } from "gatsby"
-
 import {useTranslation} from "react-i18next";
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import "../translations/i18n.js"
+import Avatar from '@material-ui/core/Avatar';
 import Logo from "../images/me.png"
+import aAvatar from "../images/aAvatar.jpg"
+import { Card, CardTitle, CardBody, CardText, Badge } from "reactstrap"
 
-
-const IndexPage = () => {
+const IndexPage = (props) => {
   const {t} = useTranslation();
 
   return (
   <Layout>
     <SEO title="Home" />
-<h1>{t("index.name")}</h1>
-  <p>{t("index.slogan")}</p>
-    
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-     
+    <div className="container">
+    <div className="containerAvatar">
+      <Avatar alt="my avatar" src={aAvatar} />
     </div>
+    <div className="containerCard">
+<Card>
+<CardBody>
+  <CardTitle><h1>{t("index.name")}</h1></CardTitle>
+  <CardText><h2>{t("index.slogan")}</h2></CardText>
+</CardBody>
+</Card>
+    </div> 
+    </div>
+    
     
     <div className="site-footer">
       <h4 className="text-center">All rights reserved© {new Date().getFullYear()}, Created by
@@ -37,10 +46,10 @@ export default IndexPage
 
 export const pageQuery = graphql`
   query {
-    me: file(relativePath: { eq: "me.png" }){
+    aAvatar: file(relativePath: { eq: "aAvatar.jpg" }){
       childImageSharp {
-        fixed(height: 30, width: 30){
-          ...GatsbyImageSharpFixed
+        fluid(maxWidth: 500, quality: 100){
+          ...GatsbyImageSharpFluid
       }
     }
   }

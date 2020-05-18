@@ -1,6 +1,6 @@
 var plugins = [{
       plugin: require('/home/vlad/Desktop/repos/photographerPortfolio/node_modules/gatsby-plugin-crisp-chat/gatsby-ssr'),
-      options: {"plugins":[],"websiteId":"6ebb07ce-cc37-45c6-af43-caaa718a66d4","enableDuringDevelop":true,"defer":true,"enableImprovedAccessibility":false},
+      options: {"plugins":[],"websiteId":"6ebb07ce-cc37-45c6-af43-caaa718a66d4","enableDuringDevelop":false,"defer":true,"enableImprovedAccessibility":false},
     },{
       plugin: require('/home/vlad/Desktop/repos/photographerPortfolio/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},

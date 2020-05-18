@@ -20,7 +20,7 @@ import {
     const toggleNavbar = () => setCollapsed(!collapsed);
   
     return (
-      <div className="container">
+      <div className="containerNav">
         <Navbar className="nav" color="faded" light>
           <NavbarBrand href="/" className="mr-auto">Portfolio</NavbarBrand>
           <NavbarToggler onClick={toggleNavbar} className="mr-2" />

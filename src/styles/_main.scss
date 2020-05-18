@@ -1,0 +1,31 @@
+html{
+    background-color:#040924;
+}
+#gatsby-focus-wrapper{
+    background-color:#040924;
+}
+
+.containerAvatar,.containerCard{
+    display: flex;
+    justify-content: center;  
+}
+.containerAvatar{
+    margin-top: 100px;
+    background-color:#040924;
+}
+.containerCard{
+    background-color:#fff;
+    border-radius: 5px;
+    margin-top: -75px;
+    box-shadow: 0 4px 8px 0 rgba(175, 173, 173, 0.2), 0 6px 20px 0 rgba(182, 179, 179, 0.19);
+    border: 3px solid silver, 
+}
+.MuiAvatar-root.MuiAvatar-circle{
+    width: 150px;
+    height: 150px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: 3px solid silver, 
+} 
+.card {
+    margin-top: 84px;
+}
