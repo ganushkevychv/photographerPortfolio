@@ -2,3 +2,23 @@
     display: flex;
     justify-content: center;
 }
+.galleryPage {
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.img {
+    border: 2px solid gainsboro;
+    box-shadow:0 4px 8px 0 rgba(238, 232, 232, 0.2), 0 6px 20px 0 rgba(228, 195, 195, 0.19);
+    margin: 10px;
+}
+.title {
+    text-align: center;
+    color: white;
+}
+.buttonLink {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}

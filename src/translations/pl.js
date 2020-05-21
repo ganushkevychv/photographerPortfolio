@@ -14,5 +14,9 @@ export default {
         titleFamily:"Rodzina",
         buttonOpen:"Otwórz",
         buttonClose:"Zamknij"
+    },
+    gallery: {
+        buttonBack:"Powrót",
+        title:"Galeria"
     }
     };

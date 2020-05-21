@@ -14,5 +14,9 @@ modal: {
     titleFamily:"Family",
     buttonOpen:"Open",
     buttonClose:"Close"
+},
+gallery: {
+    buttonBack:"Back",
+    title:"Gallery"
 }
 };

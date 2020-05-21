@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
 import {useTranslation} from "react-i18next";
+import "../translations/i18n.js"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import "../translations/i18n.js"
 import Avatar from '@material-ui/core/Avatar';
 import Logo from "../images/me.png"
 import { Card, CardTitle, CardBody, CardText, CardImg, CardGroup } from "reactstrap"
