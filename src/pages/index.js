@@ -6,8 +6,13 @@ import SEO from "../components/seo"
 import "../translations/i18n.js"
 import Avatar from '@material-ui/core/Avatar';
 import Logo from "../images/me.png"
+import { Card, CardTitle, CardBody, CardText, CardImg, CardGroup } from "reactstrap"
+import Gallery from "../components/gallery"
 import aAvatar from "../images/aAvatar.jpg"
-import { Card, CardTitle, CardBody, CardText, Badge } from "reactstrap"
+import nature from "../images/nature.jpg"
+import kids from "../images/kids.jpg"
+import family from "../images/family.jpg"
+
 
 const IndexPage = (props) => {
   const {t} = useTranslation();
@@ -27,6 +32,31 @@ const IndexPage = (props) => {
 </CardBody>
 </Card>
     </div> 
+    <div className="containerGallery">
+      <CardGroup>
+    <Card>
+        <CardImg top width="30%" src={nature} alt="nature" />
+        <CardBody>
+  <CardTitle>{t("modal.titleNature")}</CardTitle>
+          <Gallery />
+        </CardBody>
+      </Card>
+      <Card>
+        <CardImg top width="30%" src={kids} alt="girl with soap ballons" />
+        <CardBody>
+  <CardTitle>{t("modal.titleKids")}</CardTitle>
+          <Gallery />
+        </CardBody>
+      </Card>
+      <Card>
+        <CardImg top width="30%" src={family} alt="family" />
+        <CardBody>
+  <CardTitle>{t("modal.titleFamily")}</CardTitle>
+          <Gallery />
+        </CardBody>
+      </Card>
+      </CardGroup>
+</div>
     </div>
     
     

@@ -7,5 +7,12 @@ menu: {
     about:"About",
     gallery:"Gallery",
     contacts:"Contacts"
+},
+modal: {
+    titleNature:"Nature",
+    titleKids:"Kids",
+    titleFamily:"Family",
+    buttonOpen:"Open",
+    buttonClose:"Close"
 }
 };

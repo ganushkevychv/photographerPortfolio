@@ -7,5 +7,12 @@ menu: {
     about:"Обо мне",
     gallery:"Галерея",
     contacts:"Контакты"
+},
+modal: {
+    titleNature:"Природа",
+    titleKids:"Дети",
+    titleFamily:"Семья",
+    buttonOpen:"Открыть",
+    buttonClose:"Закрыть"
 }
 };
