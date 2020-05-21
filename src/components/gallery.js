@@ -19,12 +19,11 @@ const Gallery = (props) => {
     <div>
       <Button color="danger" onClick={toggle}>{t("modal.buttonOpen")}</Button>
       <Modal isOpen={modal} toggle={toggle} className={className}>
-        <ModalHeader toggle={toggle}>Modal title</ModalHeader>
         <ModalBody>
           <Gal/>
         </ModalBody>
         <ModalFooter>
-  <Button color="secondary" onClick={toggle}>{t("modal.buttonClose")}</Button>
+  <Button color="danger" onClick={toggle}>{t("modal.buttonClose")}</Button>
         </ModalFooter>
       </Modal>
     </div>
