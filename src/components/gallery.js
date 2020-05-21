@@ -18,7 +18,7 @@ const Gallery = (props) => {
   return (
     <div>
       <Button color="danger" onClick={toggle}>{t("modal.buttonOpen")}</Button>
-      <Modal isOpen={modal} toggle={toggle} className={className}>
+      <Modal centered isOpen={modal} toggle={toggle} className={className}>
         <ModalBody>
           <Gal/>
         </ModalBody>
