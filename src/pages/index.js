@@ -65,6 +65,21 @@ const IndexPage = (props) => {
 </div>
     </div>
     <div className="containerIcons">
+    <div className="Instagram">
+      <ul>
+      <a href="https://www.instagram.com/nastkazgdanska/">
+      <li>
+        <img style={{width:"80px", height:"80px"}} src={instagram}/>
+      </li>
+      <li>
+INSTAGRAM
+      </li>
+      <li className="textIcons">
+Follow me
+      </li>
+      </a>
+      </ul>
+      </div>
       <div className="email">
        <ul>
        <a href="mailto:ganushkevycha@gmail.com">
@@ -80,21 +95,7 @@ EMAIL
       </a>
       </ul>
       </div>
-      <div className="phone">
-      <ul>
-      <a href="tel:+48512371168">
-      <li>
-        <img style={{width:"80px", height:"80px"}} src={phone}/>
-      </li>
-      <li>
-PHONE
-      </li>
-      <li className="textIcons">
-+48512371168
-      </li>
-      </a>
-      </ul>
-      </div>
+      
       <div className="facebook">
       <ul>
       <a href="https://www.facebook.com/anastasiya.kurlova.7">
@@ -110,17 +111,17 @@ Follow me
       </a>
       </ul>
       </div>
-      <div className="Instagram">
+      <div className="phone">
       <ul>
-      <a href="https://www.instagram.com/nastkazgdanska/">
+      <a href="tel:+48512371168">
       <li>
-        <img style={{width:"80px", height:"80px"}} src={instagram}/>
+        <img style={{width:"80px", height:"80px"}} src={phone}/>
       </li>
       <li>
-INSTAGRAM
+PHONE
       </li>
       <li className="textIcons">
-Follow me
++48512371168
       </li>
       </a>
       </ul>
