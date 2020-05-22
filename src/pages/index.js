@@ -2,16 +2,17 @@ import React from "react"
 import { graphql } from "gatsby"
 import {useTranslation} from "react-i18next";
 import "../translations/i18n.js"
+import Logo from "../images/me.png"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Avatar from '@material-ui/core/Avatar';
-import Logo from "../images/me.png"
 import { Card, CardTitle, CardBody, CardText, CardImg, CardGroup } from "reactstrap"
 import Gallery from "../components/gallery"
 import aAvatar from "../images/aAvatar.jpg"
 import nature from "../images/nature.jpg"
 import kids from "../images/kids.jpg"
 import family from "../images/family.jpg"
+
 
 
 const IndexPage = (props) => {
@@ -34,22 +35,22 @@ const IndexPage = (props) => {
     </div> 
     <div className="containerGallery">
       <CardGroup>
-    <Card>
-        <CardImg top width="30%" src={nature} alt="nature" />
+    <Card style={{margin:"10px", marginTop:"100px"}} >
+        <CardImg top width="250px" height="200px" src={nature} alt="nature" />
         <CardBody>
   <CardTitle>{t("modal.titleNature")}</CardTitle>
           <Gallery />
         </CardBody>
       </Card>
-      <Card>
-        <CardImg top width="30%" src={kids} alt="girl with soap ballons" />
+      <Card style={{margin:"10px", marginTop:"100px"}}>
+        <CardImg top width="250px" height="200px" src={kids} alt="girl with soap ballons" />
         <CardBody>
   <CardTitle>{t("modal.titleKids")}</CardTitle>
           <Gallery />
         </CardBody>
       </Card>
-      <Card>
-        <CardImg top width="30%" src={family} alt="family" />
+      <Card style={{margin:"10px", marginTop:"100px"}}>
+        <CardImg top width="250px" height="200px" src={family} alt="family" />
         <CardBody>
   <CardTitle>{t("modal.titleFamily")}</CardTitle>
           <Gallery />
@@ -58,15 +59,11 @@ const IndexPage = (props) => {
       </CardGroup>
 </div>
     </div>
-    
-    
     <div className="site-footer">
       <h4 className="text-center">All rights reserved© {new Date().getFullYear()}, Created by
             {` `}
-            <a href="https://vladyslav-ganushkevych.netlify.app/"><img className="link-logo" src={Logo} width="30" 
+            <a href="https://vladyslav-ganushkevych.netlify.com/"><img className="link-logo" src={Logo} width="30" 
     height="30" alt="logo"/></a></h4>
-      
-     
       </div>
   </Layout>
   )

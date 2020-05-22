@@ -3,11 +3,12 @@ import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 import { Button } from 'reactstrap';
 import { Link } from "gatsby"
+import Logo from "../images/me.png"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import {useTranslation} from "react-i18next";
 import "../translations/i18n.js"
-import Logo from "../images/me.png"
+
 
 
 const Gallery = () => {
@@ -57,11 +58,11 @@ query Images {
       <Button color="danger" ><Link  to="/">{t("gallery.buttonBack")}</Link></Button>
     </div>
     <div className="site-footer">
-  <h4 className="text-center">All rights reserved© {new Date().getFullYear()}, Created by
-        {` `}
-        <a href="https://vladyslav-ganushkevych.netlify.app/"><img className="link-logo" src={Logo} width="30" 
-height="30" alt="logo"/></a></h4>
-  </div>
+      <h4 className="text-center">All rights reserved© {new Date().getFullYear()}, Created by
+            {` `}
+            <a href="https://vladyslav-ganushkevych.netlify.com/"><img className="link-logo" src={Logo} width="30" 
+    height="30" alt="logo"/></a></h4>
+      </div>
   </Layout>
 
 )
