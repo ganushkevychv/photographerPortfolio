@@ -16,7 +16,7 @@ import facebook from "../images/icons/facebook.svg"
 import email from "../images/icons/email.svg"
 import instagram from "../images/icons/instagram.svg"
 import phone from "../images/icons/phone.svg"
-import telegram from "../images/icons/telegram.svg"
+
 
 
 
@@ -74,7 +74,7 @@ const IndexPage = (props) => {
       <li>
 EMAIL
       </li>
-      <li>
+      <li className="textIcons">
      Mail me
       </li>
       </a>
@@ -89,7 +89,7 @@ EMAIL
       <li>
 PHONE
       </li>
-      <li>
+      <li className="textIcons">
 +48512371168
       </li>
       </a>
@@ -104,7 +104,7 @@ PHONE
       <li>
 FACEBOOK
       </li>
-      <li>
+      <li className="textIcons">
 Follow me
       </li>
       </a>
@@ -119,23 +119,8 @@ Follow me
       <li>
 INSTAGRAM
       </li>
-      <li>
+      <li className="textIcons">
 Follow me
-      </li>
-      </a>
-      </ul>
-      </div>
-      <div className="telegram">
-      <ul>
-      <a href="https://telegram.im/@<+48512371168>" target="_blank">
-      <li>
-        <img style={{width:"80px", height:"80px"}} src={telegram}/>
-      </li>
-      <li>
-TELEGRAM
-      </li>
-      <li>
-Text me
       </li>
       </a>
       </ul>
