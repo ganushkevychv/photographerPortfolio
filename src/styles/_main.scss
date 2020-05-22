@@ -36,3 +36,14 @@ html{
     display: flex;
     justify-content: space-between;
 }
+li {
+    list-style: none;
+    color: red;
+}
+.containerIcons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    padding-top: 30px;
+}

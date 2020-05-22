@@ -1,6 +1,6 @@
 export default {
     index: {
-        name:"Anastasija",
+        name:"Anastasiia Ganushkevych",
         slogan:"Moja strona"
     },
     menu: {

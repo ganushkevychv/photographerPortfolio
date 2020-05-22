@@ -12,6 +12,11 @@ import aAvatar from "../images/aAvatar.jpg"
 import nature from "../images/nature.jpg"
 import kids from "../images/kids.jpg"
 import family from "../images/family.jpg"
+import facebook from "../images/icons/facebook.svg"
+import email from "../images/icons/email.svg"
+import instagram from "../images/icons/instagram.svg"
+import phone from "../images/icons/phone.svg"
+import telegram from "../images/icons/telegram.svg"
 
 
 
@@ -59,6 +64,84 @@ const IndexPage = (props) => {
       </CardGroup>
 </div>
     </div>
+    <div className="containerIcons">
+      <div className="email">
+       <ul>
+       <a href="mailto:ganushkevycha@gmail.com">
+      <li>
+        <img style={{width:"80px", height:"80px"}} src={email}/>
+      </li>
+      <li>
+EMAIL
+      </li>
+      <li>
+     Mail me
+      </li>
+      </a>
+      </ul>
+      </div>
+      <div className="phone">
+      <ul>
+      <a href="tel:+48512371168">
+      <li>
+        <img style={{width:"80px", height:"80px"}} src={phone}/>
+      </li>
+      <li>
+PHONE
+      </li>
+      <li>
++48512371168
+      </li>
+      </a>
+      </ul>
+      </div>
+      <div className="facebook">
+      <ul>
+      <a href="https://www.facebook.com/anastasiya.kurlova.7">
+      <li>
+        <img style={{width:"80px", height:"80px"}} src={facebook}/>
+      </li>
+      <li>
+FACEBOOK
+      </li>
+      <li>
+Follow me
+      </li>
+      </a>
+      </ul>
+      </div>
+      <div className="Instagram">
+      <ul>
+      <a href="https://www.instagram.com/nastkazgdanska/">
+      <li>
+        <img style={{width:"80px", height:"80px"}} src={instagram}/>
+      </li>
+      <li>
+INSTAGRAM
+      </li>
+      <li>
+Follow me
+      </li>
+      </a>
+      </ul>
+      </div>
+      <div className="telegram">
+      <ul>
+      <a href="https://telegram.im/@<+48512371168>" target="_blank">
+      <li>
+        <img style={{width:"80px", height:"80px"}} src={telegram}/>
+      </li>
+      <li>
+TELEGRAM
+      </li>
+      <li>
+Text me
+      </li>
+      </a>
+      </ul>
+      </div>
+      </div>
+      
     <div className="site-footer">
       <h4 className="text-center">All rights reserved© {new Date().getFullYear()}, Created by
             {` `}
