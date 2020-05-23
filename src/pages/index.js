@@ -2,10 +2,11 @@ import React from "react"
 import { graphql } from "gatsby"
 import {useTranslation} from "react-i18next";
 import "../translations/i18n.js"
-import Logo from "../images/me.png"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
+import ContactIcons from "../components/contact"
 import Avatar from '@material-ui/core/Avatar';
 import { Card, CardTitle, CardBody, CardText, CardImg, CardGroup } from "reactstrap"
 import Gallery from "../components/gallery"
@@ -13,10 +14,7 @@ import aAvatar from "../images/aAvatar.jpg"
 import nature from "../images/nature.jpg"
 import kids from "../images/kids.jpg"
 import family from "../images/family.jpg"
-import facebook from "../images/icons/facebook.svg"
-import email from "../images/icons/email.svg"
-import instagram from "../images/icons/instagram.svg"
-import phone from "../images/icons/phone.svg"
+
 
 
 
@@ -65,69 +63,7 @@ const IndexPage = (props) => {
       </CardGroup>
 </div>
     </div>
-    <div className="containerIcons">
-    <div className="Instagram">
-      <ul>
-      <a href="https://www.instagram.com/nastkazgdanska/">
-      <li>
-        <img style={{width:"80px", height:"80px"}} src={instagram}/>
-      </li>
-      <li>
-INSTAGRAM
-      </li>
-      <li className="textIcons">
-Follow me
-      </li>
-      </a>
-      </ul>
-      </div>
-      <div className="email">
-       <ul>
-       <a href="mailto:ganushkevycha@gmail.com">
-      <li>
-        <img style={{width:"80px", height:"80px"}} src={email}/>
-      </li>
-      <li>
-EMAIL
-      </li>
-      <li className="textIcons">
-     Mail me
-      </li>
-      </a>
-      </ul>
-      </div>
-      
-      <div className="facebook">
-      <ul>
-      <a href="https://www.facebook.com/anastasiya.kurlova.7">
-      <li>
-        <img style={{width:"80px", height:"80px"}} src={facebook}/>
-      </li>
-      <li>
-FACEBOOK
-      </li>
-      <li className="textIcons">
-Follow me
-      </li>
-      </a>
-      </ul>
-      </div>
-      <div className="phone">
-      <ul>
-      <a href="tel:+48512371168">
-      <li>
-        <img style={{width:"80px", height:"80px"}} src={phone}/>
-      </li>
-      <li>
-PHONE
-      </li>
-      <li className="textIcons">
-+48512371168
-      </li>
-      </a>
-      </ul>
-      </div>
-      </div>
+    <ContactIcons/>
       <Footer/>
   </Layout>
   )
