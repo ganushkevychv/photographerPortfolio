@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
 import ContactIcons from "../components/contact"
+import LocationIcons from "../components/location"
 import Avatar from '@material-ui/core/Avatar';
 import { Card, CardTitle, CardBody, CardText, CardImg, CardGroup } from "reactstrap"
 import Gallery from "../components/gallery"
@@ -60,7 +61,9 @@ const IndexPage = (props) => {
       </CardGroup>
 </div>
     </div>
+    <h2 className="orderFoto">{t("location.h2")}</h2>
     <ContactIcons/>
+    <LocationIcons/>
       <Footer/>
   </Layout>
   )

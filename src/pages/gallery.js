@@ -60,6 +60,7 @@ query Images {
     <div className="buttonLink">
       <Button color="danger" ><Link  to="/">{t("gallery.buttonBack")}</Link></Button>
     </div>
+    <h2 className="orderFoto">{t("location.h2")}</h2>
     <ContactIcons/>
     <Footer/>
   </Layout>

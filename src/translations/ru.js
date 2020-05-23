@@ -18,5 +18,10 @@ modal: {
 gallery: {
     buttonBack:"Назад",
     title:"Галерея"
+},
+location: {
+    poland: "Польша",
+    ukraine: "Украина",
+    h2: "Заказать фотосессию"
 }
 };

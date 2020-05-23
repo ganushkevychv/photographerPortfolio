@@ -18,5 +18,10 @@ export default {
     gallery: {
         buttonBack:"Powrót",
         title:"Galeria"
+    },
+    location: {
+        poland: "Polska",
+        ukraine: "Ukraina",
+        h2: "Zamów sesję zdjęciową"
     }
     };
