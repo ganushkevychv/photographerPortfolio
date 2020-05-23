@@ -1,7 +1,7 @@
 export default {
     index: {
         name:"Anastasiia Ganushkevych",
-        slogan:"Moja strona"
+        slogan:"Zadbaj o każdej chwilę"
     },
     menu: {
         about:"O mnie",

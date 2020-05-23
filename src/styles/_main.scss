@@ -28,13 +28,17 @@ html{
 } 
 .card {
     margin-top: 84px;
+    border: white;
+    
 }
-.card-title {
+.card-title, .card-text {
     text-align: center;
+    border: none;
 }
 .containerGallery {
     display: flex;
     justify-content: space-between;
+    
 }
 li {
     list-style: none;

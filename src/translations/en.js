@@ -1,7 +1,7 @@
 export default {
 index: {
     name:"Anastasiia Ganushkevych",
-    slogan:"My page"
+    slogan:"Cherish every moment"
 },
 menu: {
     about:"About",

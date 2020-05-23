@@ -2,7 +2,6 @@ import React from "react"
 import { graphql } from "gatsby"
 import {useTranslation} from "react-i18next";
 import "../translations/i18n.js"
-
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
@@ -31,10 +30,9 @@ const IndexPage = (props) => {
     </div>
     <div className="containerCard">
 <Card>
-<CardBody>
   <CardTitle><h1>{t("index.name")}</h1></CardTitle>
   <CardText><h2>{t("index.slogan")}</h2></CardText>
-</CardBody>
+  <CardText><h2>{t("index.slogan")}</h2></CardText>
 </Card>
     </div> 
     <div className="containerGallery">

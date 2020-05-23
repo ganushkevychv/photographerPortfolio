@@ -1,7 +1,7 @@
 export default {
 index:{
     name:"Анастасия Ганушкевич",
-    slogan:"Моя страница"
+    slogan:"Берегите каждое мгновение"
 },
 menu: {
     about:"Обо мне",
