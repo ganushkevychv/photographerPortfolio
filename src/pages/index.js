@@ -32,7 +32,6 @@ const IndexPage = (props) => {
 <Card>
   <CardTitle><h1>{t("index.name")}</h1></CardTitle>
   <CardText><h2>{t("index.slogan")}</h2></CardText>
-  <CardText><h2>{t("index.slogan")}</h2></CardText>
 </Card>
     </div> 
     <div className="containerGallery">
