@@ -30,6 +30,7 @@ const Gallery = (props) => {
   </div>
         </ModalFooter>
       </Modal>
+     
     </div>
   );
 }
