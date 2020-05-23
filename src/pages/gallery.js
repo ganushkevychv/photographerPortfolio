@@ -5,6 +5,7 @@ import { Button } from 'reactstrap';
 import { Link } from "gatsby"
 import Logo from "../images/me.png"
 import Layout from "../components/layout"
+import Footer from "../components/footer"
 import SEO from "../components/seo"
 import {useTranslation} from "react-i18next";
 import "../translations/i18n.js"
@@ -12,6 +13,25 @@ import "../translations/i18n.js"
 
 
 const Gallery = () => {
+  let style = {
+    backgroundColor: "lightgrey",
+    borderTop: "1px solid #E7E7E7",
+    textAlign: "center",
+    padding: "0px",
+    position: "fixed",
+    left: "0",
+    bottom: "0",
+    height: "35px",
+    width: "100%",
+    marginTop: "10px",
+}
+
+let phantom = {
+  display: 'block',
+  padding: '20px',
+  height: '60px',
+  width: '100%',
+}
 const {t} = useTranslation();
 const data = useStaticQuery(graphql`
 query Images {
@@ -54,15 +74,18 @@ query Images {
         <Img className="img" key={image.id} fixed={image.childImageSharp.fixed} />
       ))}
     </div>
+    
     <div className="buttonLink">
       <Button color="danger" ><Link  to="/">{t("gallery.buttonBack")}</Link></Button>
     </div>
-    <div className="site-footer">
+    <Footer/>
+    {/* <div style={phantom}/>
+    <div style={style}>
       <h4 className="text-center">All rights reserved© {new Date().getFullYear()}, Created by
             {` `}
             <a href="https://vladyslav-ganushkevych.netlify.com/"><img className="link-logo" src={Logo} width="30" 
     height="30" alt="logo"/></a></h4>
-      </div>
+      </div> */}
   </Layout>
 
 )

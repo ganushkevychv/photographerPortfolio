@@ -5,6 +5,7 @@ import "../translations/i18n.js"
 import Logo from "../images/me.png"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Footer from "../components/footer"
 import Avatar from '@material-ui/core/Avatar';
 import { Card, CardTitle, CardBody, CardText, CardImg, CardGroup } from "reactstrap"
 import Gallery from "../components/gallery"
@@ -127,13 +128,7 @@ PHONE
       </ul>
       </div>
       </div>
-      
-    <div className="site-footer">
-      <h4 className="text-center">All rights reserved© {new Date().getFullYear()}, Created by
-            {` `}
-            <a href="https://vladyslav-ganushkevych.netlify.com/"><img className="link-logo" src={Logo} width="30" 
-    height="30" alt="logo"/></a></h4>
-      </div>
+      <Footer/>
   </Layout>
   )
 }
