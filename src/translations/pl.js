@@ -22,6 +22,7 @@ export default {
     location: {
         poland: "Polska",
         ukraine: "Ukraina",
-        h2: "Zamów sesję zdjęciową"
+        h2: "Zamów sesję zdjęciową",
+        h2Location:"Przyjmujemy zamówienia na terenie Polski i Ukrainy"
     }
     };

@@ -63,6 +63,7 @@ const IndexPage = (props) => {
     </div>
     <h2 className="orderFoto">{t("location.h2")}</h2>
     <ContactIcons/>
+    <h2 className="orderFoto">{t("location.h2Location")}</h2>
     <LocationIcons/>
       <Footer/>
   </Layout>

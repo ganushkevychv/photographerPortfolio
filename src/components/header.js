@@ -11,6 +11,7 @@ import {
   NavItem,
   NavLink } from 'reactstrap'; 
   import "../translations/i18n.js"
+  import ContactIcons from "../components/contact"
   import {useTranslation} from "react-i18next";
 
   const Header = (props) => {
@@ -30,7 +31,7 @@ import {
                 <NavLink href="/gallery/">{t("menu.gallery")}</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/contacts/">{t("menu.contacts")}</NavLink>
+                <ContactIcons/>
               </NavItem>
             </Nav>
           </Collapse>

@@ -22,6 +22,7 @@ gallery: {
 location: {
     poland: "Poland",
     ukraine: "Ukraine",
-    h2: "Order a photo session"
+    h2: "Order a photo session",
+    h2Location:"We accept orders in Poland and Ukraine"
 }
 };
