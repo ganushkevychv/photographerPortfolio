@@ -24,5 +24,10 @@ export default {
         ukraine: "Ukraina",
         h2: "Zamów sesję zdjęciową",
         h2Location:"Przyjmujemy zamówienia na terenie Polski i Ukrainy"
+    },
+    icons: {
+        mail:"Napisać",
+        instagram:"Subskrybuj",
+        facebook:"Subskrybuj"
     }
     };

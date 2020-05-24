@@ -3,10 +3,13 @@ import facebook from "../images/icons/facebook.svg"
 import email from "../images/icons/email.svg"
 import instagram from "../images/icons/instagram.svg"
 import phone from "../images/icons/phone.svg"
-
+import {useTranslation} from "react-i18next";
+import "../translations/i18n.js"
 
 
 const ContactIcons = () => {
+
+const {t} = useTranslation();
 
     return (
 <div className="containerIcons">
@@ -20,7 +23,7 @@ const ContactIcons = () => {
 INSTAGRAM
       </li>
       <li className="textIcons">
-Follow me
+{t("icons.instagram")}
       </li>
       </a>
       </ul>
@@ -35,7 +38,7 @@ Follow me
 EMAIL
       </li>
       <li className="textIcons">
-     Mail me
+      {t("icons.mail")}
       </li>
       </a>
       </ul>
@@ -51,7 +54,7 @@ EMAIL
 FACEBOOK
       </li>
       <li className="textIcons">
-Follow me
+      {t("icons.facebook")}
       </li>
       </a>
       </ul>

@@ -24,5 +24,10 @@ location: {
     ukraine: "Ukraine",
     h2: "Order a photo session",
     h2Location:"We accept orders in Poland and Ukraine"
+},
+icons: {
+    mail:"Mail me",
+    instagram:"Follow me",
+    facebook:"Follow me"
 }
 };
