@@ -21,31 +21,35 @@ const form = {
     textAlign: "center",
     paddingTop: "30px",
   }
-
+const input = {
+    width:"400px",
+    height:"50px",
+    textAlign:"center"
+}
 
 return(
 <Layout>
 <SEO title="Contacts" />
 <div style={form}>
-<form  name="contact" method="post" netlify-honeypot="bot-field" data-netlify="true" action="/success">
+<form  name="contact" method="post" netlify-honeypot="bot-field" data-netlify="true" action="/success/">
         <input type="hidden" name="form-name" value="contact" />
   <p>
     <label style={text} >{t("form.name")}</label>   
   </p>
   <p>
-  <input type="text" name="name" placeholder={t("form.name")}/>
+  <input style={input} type="text" name="name" placeholder={t("form.name")}/>
   </p>
   <p>
     <label style={text}>{t("form.email")}</label>
   </p>
   <p>
-  <input type="email" name="email" placeholder={t("form.email")} />
+  <input style={input} type="email" name="email" placeholder={t("form.email")} />
   </p>
   <p>
     <label style={text}>{t("form.message")}</label>
   </p>
   <p>
-  <textarea name="message" placeholder={t("form.message")}></textarea>
+  <textarea style={input} name="message" placeholder={t("form.message")}></textarea>
   </p>
   <p>
 <Button color="danger" type="submit">{t("form.sent")}</Button>

@@ -32,7 +32,7 @@ icons: {
 },
 form: {
     name:"Ваше Имя",
-    email:"Ваше Email",
+    email:"Ваш Email",
     message:"Сообщение",
     sent:"Отправить",
 },
