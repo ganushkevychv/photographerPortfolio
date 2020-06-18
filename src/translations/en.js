@@ -35,5 +35,8 @@ form: {
     email:"Your Email",
     message:"Message",
     sent:"Send",
-}
+},
+success: {
+    message:"Message sent",
+},
 };

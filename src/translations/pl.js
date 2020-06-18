@@ -35,5 +35,8 @@ export default {
         email:"Adres email",
         message:"Treść wiadomości",
         sent:"Wyślij",
-    }
+    },
+    success: {
+        message:"Wiadomość wysłana",
+    },
     };

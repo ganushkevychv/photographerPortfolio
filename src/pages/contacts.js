@@ -27,7 +27,7 @@ return(
 <Layout>
 <SEO title="Contacts" />
 <div style={form}>
-<form  name="contact" method="post" netlify-honeypot="bot-field" data-netlify="true">
+<form  name="contact" method="post" netlify-honeypot="bot-field" data-netlify="true" action="/success">
         <input type="hidden" name="form-name" value="contact" />
   <p>
     <label style={text} >{t("form.name")}</label>   

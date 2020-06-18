@@ -35,5 +35,8 @@ form: {
     email:"Ваше Email",
     message:"Сообщение",
     sent:"Отправить",
-}
+},
+success: {
+    message:"Сообщение отправлено",
+},
 };
