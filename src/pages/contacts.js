@@ -12,6 +12,9 @@ import "../translations/i18n.js"
 const Contacts = () => {
 
 const {t} = useTranslation();
+const text = {
+    color:"white",
+}
 
 return(
 <Layout>
