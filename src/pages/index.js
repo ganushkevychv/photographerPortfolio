@@ -6,7 +6,6 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
 import ContactIcons from "../components/contact"
-
 import LocationIcons from "../components/location"
 import Avatar from '@material-ui/core/Avatar';
 import { Card, CardTitle, CardBody, CardText, CardImg, CardGroup } from "reactstrap"
@@ -26,7 +25,6 @@ const IndexPage = (props) => {
 
   return (
   <Layout>
-  
     <SEO title="Home" />
     <div className="container">
      <div className="containerAvatar">

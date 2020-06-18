@@ -67,4 +67,4 @@ query Images {
 
 )
   }
-export default Gallery
+export default Gallery;

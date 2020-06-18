@@ -22,6 +22,7 @@ const form = {
 return (
     <div style={form}>
         <form name="contact" method="POST" data-netlify-recaptcha="true">
+        <input type="hidden" name="form-name" value="contact" />
   <p>
     <label style={text} >{t("form.name")}</label>   
   </p>

@@ -9,6 +9,7 @@ exports.components = {
   "component---src-pages-404-js": hot(preferDefault(require("/home/vlad/Desktop/repos/photographerPortfolio/src/pages/404.js"))),
   "component---src-pages-contacts-js": hot(preferDefault(require("/home/vlad/Desktop/repos/photographerPortfolio/src/pages/contacts.js"))),
   "component---src-pages-gallery-js": hot(preferDefault(require("/home/vlad/Desktop/repos/photographerPortfolio/src/pages/gallery.js"))),
-  "component---src-pages-index-js": hot(preferDefault(require("/home/vlad/Desktop/repos/photographerPortfolio/src/pages/index.js")))
+  "component---src-pages-index-js": hot(preferDefault(require("/home/vlad/Desktop/repos/photographerPortfolio/src/pages/index.js"))),
+  "component---src-pages-succes-js": hot(preferDefault(require("/home/vlad/Desktop/repos/photographerPortfolio/src/pages/succes.js")))
 }
 
