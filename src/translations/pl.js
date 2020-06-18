@@ -29,5 +29,11 @@ export default {
         mail:"Napisać",
         instagram:"Subskrybuj",
         facebook:"Subskrybuj"
+    },
+    form: {
+        name:"Imię i nazwisko",
+        email:"Adres email",
+        message:"Treść wiadomości",
+        sent:"Wyślij",
     }
     };

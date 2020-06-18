@@ -29,5 +29,11 @@ icons: {
     mail:"Написать",
     instagram:"Подписаться",
     facebook:"Подписаться"
+},
+form: {
+    name:"Ваше Имя",
+    email:"Ваше Email",
+    message:"Сообщение",
+    sent:"Отправить",
 }
 };

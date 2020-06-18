@@ -29,5 +29,11 @@ icons: {
     mail:"Mail me",
     instagram:"Follow me",
     facebook:"Follow me"
+},
+form: {
+    name:"Your Name",
+    email:"Your Email",
+    message:"Message",
+    sent:"Send",
 }
 };

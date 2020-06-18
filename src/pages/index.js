@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Footer from "../components/footer"
 import ContactIcons from "../components/contact"
+
 import LocationIcons from "../components/location"
 import Avatar from '@material-ui/core/Avatar';
 import { Card, CardTitle, CardBody, CardText, CardImg, CardGroup } from "reactstrap"
@@ -19,22 +20,25 @@ import family from "../images/family.jpg"
 
 
 
+
 const IndexPage = (props) => {
   const {t} = useTranslation();
 
   return (
   <Layout>
+  
     <SEO title="Home" />
     <div className="container">
-    <div className="containerAvatar">
+     <div className="containerAvatar">
       <Avatar alt="my avatar" src={aAvatar} />
     </div>
     <div className="containerCard">
-<Card>
+<Card >
+  
   <CardTitle><h1>{t("index.name")}</h1></CardTitle>
   <CardText><h2>{t("index.slogan")}</h2></CardText>
 </Card>
-    </div> 
+    </div>
     <div className="containerGallery">
       <CardGroup>
     <Card style={{margin:"10px", marginTop:"100px"}} >
@@ -65,6 +69,7 @@ const IndexPage = (props) => {
     <ContactIcons/>
     <h2 className="orderFoto">{t("location.h2Location")}</h2>
     <LocationIcons/>
+    
       <Footer/>
   </Layout>
   )

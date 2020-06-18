@@ -28,7 +28,10 @@ import {
           <Collapse isOpen={!collapsed} navbar>
             <Nav navbar>
               <NavItem>
-                <NavLink href="/gallery/">{t("menu.gallery")}</NavLink>
+                <NavLink style={{textDecoration: "none"}} href="/gallery/">{t("menu.gallery")}</NavLink>
+              </NavItem>
+              <NavItem>
+                <NavLink style={{textDecoration: "none"}} href="/contacts/">{t("menu.contacts")}</NavLink>
               </NavItem>
               <NavItem>
                 <ContactIcons/>
