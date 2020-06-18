@@ -15,11 +15,22 @@ const {t} = useTranslation();
 const text = {
     color:"white",
 }
+const form = {
+    display: "flex",
+    justifyContent: "center",
+    flexWrap: "wrap",
+    textAlign: "center",
+    paddingTop: "30px",
+  }
+  const recaptcha = {
+    paddingTop: "30px",
+  }
 
 return(
 <Layout>
 <SEO title="Contacts" />
-<form name="contact" method="post" data-netlify-recaptcha="true" data-netlify="true">
+<div style={form}>
+<form  name="contact" method="post" data-netlify-recaptcha="true" data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
   <p>
     <label style={text} >{t("form.name")}</label>   
@@ -39,11 +50,12 @@ return(
   <p>
   <textarea name="message" placeholder={t("form.message")}></textarea>
   </p>
-  <div data-netlify-recaptcha="true"></div>
+  <div style={recaptcha} data-netlify-recaptcha="true"></div>
   <p>
 <Button color="danger" type="submit">{t("form.sent")}</Button>
   </p>
 </form>
+</div>
 <div className="buttonLink">
 <Button color="danger" ><Link  to="/">{t("gallery.buttonBack")}</Link></Button>
 </div>
