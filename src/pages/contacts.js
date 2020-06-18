@@ -4,7 +4,6 @@ import Footer from "../components/footer"
 import SEO from "../components/seo"
 import { Button } from 'reactstrap';
 import { Link } from "gatsby"
-import ContactForm from "../components/contactForm";
 import ContactIcons from "../components/contact";
 import {useTranslation} from "react-i18next";
 import "../translations/i18n.js"
@@ -22,15 +21,13 @@ const form = {
     textAlign: "center",
     paddingTop: "30px",
   }
-  const recaptcha = {
-    paddingTop: "30px",
-  }
+
 
 return(
 <Layout>
 <SEO title="Contacts" />
 <div style={form}>
-<form  name="contact" method="post" data-netlify-recaptcha="true" data-netlify="true">
+<form  name="contact" method="post" netlify-honeypot="bot-field" data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
   <p>
     <label style={text} >{t("form.name")}</label>   
@@ -50,7 +47,6 @@ return(
   <p>
   <textarea name="message" placeholder={t("form.message")}></textarea>
   </p>
-  <div style={recaptcha} data-netlify-recaptcha="true"></div>
   <p>
 <Button color="danger" type="submit">{t("form.sent")}</Button>
   </p>
