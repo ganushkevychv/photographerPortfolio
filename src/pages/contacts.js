@@ -16,7 +16,31 @@ const {t} = useTranslation();
 return(
 <Layout>
 <SEO title="Contacts" />
-<ContactForm/>
+<form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
+  <p>
+    <label style={text} >{t("form.name")}</label>   
+  </p>
+  <p>
+  <input type="text" name="name" placeholder={t("form.name")}/>
+  </p>
+  <p>
+    <label style={text}>{t("form.email")}</label>
+  </p>
+  <p>
+  <input type="email" name="email" placeholder={t("form.email")} />
+  </p>
+  <p>
+    <label style={text}>{t("form.message")}</label>
+  </p>
+  <p>
+  <textarea name="message" placeholder={t("form.message")}></textarea>
+  </p>
+  <div data-netlify-recaptcha="true"></div>
+  <p>
+<Button color="danger" type="submit">{t("form.sent")}</Button>
+  </p>
+</form>
 <div className="buttonLink">
 <Button color="danger" ><Link  to="/">{t("gallery.buttonBack")}</Link></Button>
 </div>
