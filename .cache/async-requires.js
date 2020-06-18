@@ -7,6 +7,6 @@ exports.components = {
   "component---src-pages-contacts-js": () => import("./../src/pages/contacts.js" /* webpackChunkName: "component---src-pages-contacts-js" */),
   "component---src-pages-gallery-js": () => import("./../src/pages/gallery.js" /* webpackChunkName: "component---src-pages-gallery-js" */),
   "component---src-pages-index-js": () => import("./../src/pages/index.js" /* webpackChunkName: "component---src-pages-index-js" */),
-  "component---src-pages-succes-js": () => import("./../src/pages/succes.js" /* webpackChunkName: "component---src-pages-succes-js" */)
+  "component---src-pages-success-js": () => import("./../src/pages/success.js" /* webpackChunkName: "component---src-pages-success-js" */)
 }
 
